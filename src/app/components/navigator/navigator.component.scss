@@ -1,0 +1,51 @@
+.navigator{
+   // padding: 2rem;
+    background-color: transparent;
+    font-family: 'Codystar';
+    &__logo{
+        padding: 2rem;
+        //border-bottom: 1px solid greenyellow;
+
+        &-img{
+            height: 2.5rem;
+        }
+
+        &-header{
+            padding-left: 1rem;
+            color: greenyellow;
+            vertical-align: text-bottom;
+            text-align: left;
+            &_sub1{
+                font-size: small;
+            }
+
+            &_sub2{
+                font-size: large;
+            }
+        }
+
+        &-button{
+            border: none;
+            background: transparent;
+            display: flex;
+        }
+    }
+
+    &__tabs{
+        display: flex;
+        color: red;
+        float: left;
+        //border-bottom: 1px solid greenyellow;
+        
+        &_tab{
+            padding: 1rem 2.5rem;
+            margin: auto;
+            &:hover{
+            color: black;
+            background-color: limegreen;
+            border-radius: 1rem 1rem 0 0;
+            cursor: pointer;
+            }
+        }
+    }
+}

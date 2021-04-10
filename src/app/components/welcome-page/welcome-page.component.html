@@ -1,0 +1,36 @@
+<ng-container *ngIf="!welcomeAnimatationComplete">
+    <div class="welcome-page__color_one">
+        <div class="welcome-page__color_two">
+            <div class="welcome-page_letters welcome-page_letters_H">H</div>
+            <div class="welcome-page_letters welcome-page_letters_E">E</div>
+            <div class="welcome-page_letters welcome-page_letters_L1">L</div>
+            <div class="welcome-page_letters welcome-page_letters_L2">L</div>
+            <div class="welcome-page_letters welcome-page_letters_O">0</div>
+            <div class="welcome-page_letters welcome-page_letters_dot">.</div>
+            <div class="welcome-page_circle"></div>
+        </div>
+    </div>
+</ng-container>
+<ng-container *ngIf="showPerspectiveView">
+    <div class="perspective">
+        <!-- <particles [style]="myStyle" [width]="width" [height]="height" [params]="myParms"></particles> -->
+        <div class="perspective__transition">
+        <div id="particles-js"></div>
+            <mat-card class="perspective__card">
+                <mat-card-title>Welcome!!!!</mat-card-title>
+                <mat-card-content>
+                    <!-- <p class="perspective__card_para">
+                        to my portfolio
+                      </p> -->
+                    <p class="perspective__card_para">
+                      I'm a web developer
+                    </p>
+                  </mat-card-content>
+                  <mat-card-actions>
+                    <button mat-raised-button>Portfolio<mat-icon class="perspective__card_icon">face</mat-icon></button>
+                    <button mat-raised-button>GitHub<mat-icon svgIcon="github" class="perspective__card_icon"></mat-icon></button>
+                  </mat-card-actions>
+            </mat-card>
+    </div>
+    </div>
+</ng-container>

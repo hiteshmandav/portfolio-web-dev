@@ -1,0 +1,241 @@
+.welcome-page{
+    &__color_one{
+        background-color: whitesmoke;
+        animation-name: sweep-right-full;
+        animation-duration: 0.5s;
+        animation-timing-function:linear;
+        animation-delay:0s;
+        animation-fill-mode:forwards;
+        animation-iteration-count: 1;
+
+    }
+    &__color_two{
+        background-color: red;
+        animation-name: sweep-right-half;
+        animation-duration: 0.25s;
+        animation-timing-function:linear;
+        animation-delay:0.5s;
+        animation-fill-mode:forwards;
+        animation-iteration-count: 1;
+        z-index: 1;
+    }
+
+    &_letters{
+        position: absolute;
+        width: 2rem;
+        height: 2rem;
+        font-size: 10vw;
+        font-family: fantasy;
+        opacity: 0;
+        animation-duration: 3s;
+        animation-timing-function:linear;
+        animation-fill-mode:forwards;
+        animation-iteration-count: 1;
+
+        &_H{
+            color: whitesmoke;
+            animation-name: animate-H;
+            animation-delay:0.75s;
+            transform: translate(38vw, 22vh);
+        }
+        @keyframes animate-H {
+            from {opacity: 0; transform: translate(38vw, 0vh);}
+            15%  {opacity: 100;transform: translate(38vw, 22vh);}
+            30%  {opacity: 100;transform: translate(38vw, 22vh) rotateX(-45deg); }
+            45%  {opacity: 100;transform: translate(38vw, 22vh) rotateX(45deg);}
+            60%  {opacity: 100;transform: translate(38vw, 22vh) rotateX(-20deg);}
+            75%  {opacity: 100;transform: translate(38vw, 22vh) rotateX(20deg);}
+            90%  {opacity: 100;transform: translate(38vw, 22vh) rotateX(0deg);}
+            to  {opacity: 100;transform: translate(38vw, 22vh);}
+        }
+        &_E{
+            color: whitesmoke;
+            transform-origin: bottom left;
+            animation-name: animate-E;
+            animation-duration: 3s;
+            animation-delay:1s;
+            animation-duration: 1s;
+        }
+        @keyframes animate-E {
+            from {opacity: 0; transform: translate(45vw, 0vh);}
+            10%  {opacity: 100;transform: translate(45vw, 22vh);}
+            20%  {opacity: 100;transform: translate(45vw, 22vh) rotateZ(-30deg); }
+            30%  {opacity: 100;transform: translate(45vw, 22vh) rotateZ(30deg);}
+            40%  {opacity: 100;transform: translate(45vw, 22vh) rotateZ(-20deg);}
+            50%  {opacity: 100;transform: translate(45vw, 22vh) rotateZ(20deg);}
+            60%  {opacity: 100;transform: translate(45vw, 22vh) rotateZ(-10deg);}
+            70%  {opacity: 100;transform: translate(45vw, 22vh) rotateZ(10deg); }
+            80%  {opacity: 100;transform: translate(45vw, 22vh) rotateZ(-5deg);}
+            90%  {opacity: 100;transform: translate(45vw, 22vh) rotateZ(5deg);}
+            to   {opacity: 100;transform: translate(45vw, 22vh) rotateZ(0deg);}
+            
+        }
+    
+        &_L1{
+            color: whitesmoke;
+            animation-name: animate-L1;
+            animation-delay:1s;
+            transform: translate(45vw, 45vh);
+        }
+        @keyframes animate-L1 {
+            from {opacity: 0; transform: translate(45vw, 100vh);}
+            30%  {opacity: 100;transform: translate(45vw, 45vh);}
+            35%  {opacity: 100;transform: translate(45vw, 45vh) rotateZ(-20deg); }
+            45%  {opacity: 100;transform: translate(45vw, 45vh) rotateZ(20deg);}
+            60%  {opacity: 100;transform: translate(45vw, 45vh) rotateZ(-10deg);}
+            75%  {opacity: 100;transform: translate(45vw, 45vh) rotateZ(10deg);}
+            90%  {opacity: 100;transform: translate(45vw, 45vh) rotateZ(0deg);}
+            to  {opacity: 100;transform: translate(45vw, 45vh);}
+        }
+    
+        &_L2{
+            color: red;
+            animation-name: animate-L2;
+            animation-delay:1.25s;
+            transform: translate(50vw, 45vh);
+        }
+        @keyframes animate-L2 {
+            from {opacity: 0; transform: translate(100vw, 45vh);}
+            30%  {opacity: 100;transform: translate(50vw, 45vh);}
+            35%  {opacity: 100;transform: translate(50vw, 45vh) rotateY(-20deg); }
+            45%  {opacity: 100;transform: translate(50vw, 45vh) rotateY(20deg);}
+            60%  {opacity: 100;transform: translate(50vw, 45vh) rotateY(-10deg);}
+            75%  {opacity: 100;transform: translate(50vw, 45vh) rotateY(10deg);}
+            90%  {opacity: 100;transform: translate(50vw, 45vh) rotateY(0deg);}
+            to  {opacity: 100;transform: translate(50vw, 45vh);}
+        }
+    
+        &_O{
+            color: red;
+            animation-name: animate-O;
+            animation-delay:1.5s;
+            transform: translate(55vw, 45vh);
+        }
+        @keyframes animate-O {
+            from {opacity: 0; transform: translate(0vw, 45vh);}
+            30%  {opacity: 100;transform: translate(55vw, 45vh);}
+            35%  {opacity: 100;transform: translate(55vw, 45vh) rotateY(-20deg); }
+            45%  {opacity: 100;transform: translate(55vw, 45vh) rotateY(20deg);}
+            60%  {opacity: 100;transform: translate(55vw, 45vh) rotateY(-10deg);}
+            75%  {opacity: 100;transform: translate(55vw, 45vh) rotateY(10deg);}
+            90%  {opacity: 100;transform: translate(55vw, 45vh) rotateY(0deg);}
+            to  {opacity: 100;transform: translate(55vw, 45vh);}
+        }
+    
+        &_dot{
+            color: red;
+            animation-name: animate-dot;
+            animation-delay:1.75s;
+            transform: translate(62vw, 45vh);
+        }
+
+        @keyframes animate-dot {
+            from {opacity: 0; transform: translate(62vw, 0vh);}
+            30%  {opacity: 100;transform: translate(62vw, 45vh);}
+            35%  {opacity: 100;transform: translate(62vw, 45vh) rotateY(-20deg); }
+            45%  {opacity: 100;transform: translate(62vw, 45vh) rotateY(20deg);}
+            60%  {opacity: 100;transform: translate(62vw, 45vh) rotateY(-10deg);}
+            75%  {opacity: 100;transform: translate(62vw, 45vh) rotateY(10deg);}
+            90%  {opacity: 100;transform: translate(62vw, 45vh) rotateY(0deg);}
+            to  {opacity: 100;transform: translate(62vw, 45vh);}
+        }
+    }
+
+    &_circle{
+        position: absolute;
+        opacity: 0;
+        animation: circle 0.5s  2.25s 1 linear forwards;
+        transform: translate(50vw);
+        width: 0vw;
+        height: 100vh;
+        background-color: yellowgreen;
+    }
+
+    @keyframes circle {
+        from {opacity: 0; width: 0vw;}
+        to {opacity: 100%; width: 100vw;transform: translate(0vw);
+            background-color: black;}
+    }
+
+    @keyframes sweep-right-half {
+        from  {width: 00vw;height: 100vh;}
+        to {width: 50vw;height: 100vh;}
+      }
+
+
+    @keyframes sweep-right-full {
+        from  {width: 00vw;height: 100vh;}
+        to {width: 100vw;height: 100vh;}
+      }
+}
+
+.perspective{
+    width: 100vw;height: 100vh;
+    animation-name: fade-in;
+    animation-duration: 5s;
+    animation-timing-function:linear;
+    animation-delay:0s;
+    animation-fill-mode:forwards;
+    animation-iteration-count: 1;
+    
+    &__card {
+        max-width: 20rem;
+        //margin: -10rem auto -10rem;
+        margin: auto;
+        top: 50%;
+        background-color: #ffffff;
+        color: #000000;
+        text-align: center;
+        //font-family: 'Source Sans Pro';
+
+        &_icon{
+            margin-left: 0.5rem;
+            
+        }
+
+        &_para{
+            margin-bottom: 0;
+            font: small-caption;
+        }
+
+    ::ng-deep .mat-raised-button{
+        color:black;
+        background-color: #ebebeb;
+
+        &:hover{
+            color:white;
+            background-color: black;
+        }
+    }
+      }
+
+    &__transition{
+        width: inherit;height: inherit;
+        animation-name: opacity;
+        animation-duration: 5s;
+        animation-timing-function:linear;
+        animation-delay:0s;
+        animation-fill-mode:forwards;
+        animation-iteration-count: 1;
+    }
+
+    @keyframes opacity {
+        from  {opacity: 0;}
+        50% {opacity: 0.5;}
+        to  {opacity: 1;}
+      }
+
+    @keyframes fade-in {
+        from  {background-color: black}
+        50% {background-color: #001600;}
+        to  {background-color: black}
+      }
+}
+
+#particles-js{ position:absolute; 
+    width: 100vw; 
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%; 
+}
